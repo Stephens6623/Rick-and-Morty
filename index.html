@@ -8,8 +8,27 @@
     </head>
 
     <body>
-        <img src="" alt="" id="firstImage" />
-        <img src="" alt="" id="secondImage" />
+        <h1>Rick and Morty Character Fetcher</h1>
+        <div class="container">
+            <div class="characters">
+                <div class="character">
+                    <h2 id="firstName"></h2>
+                    <img id="firstImage" alt="First Character Image" />
+                </div>
+                <div class="character">
+                    <h2 id="secondName"></h2>
+                    <img id="secondImage" alt="Second Character Image" />
+                </div>
+            </div>
+
+        <div class="inputs">
+            <label for="first-id">First Character I.D.</label>
+            <input type="number" id="first-id" placeholder="1-826" />
+            <label for="second-id">Second Character I.D.</label>
+            <input type="number" id="second-id" placeholder="1-826" />
+            <button onclick="fetchCharacters()">Fetch Characters</button>
+        </div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
